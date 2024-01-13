@@ -1015,7 +1015,12 @@ img {
 
 
 /* social media size  */
-@media (min-width: 428px) {
+@media (max-width: 428px) {
+
+  .app-contaioner{
+    margin-left: auto;
+    margin-right: auto;
+  }
   .header-section{
   flex-wrap: wrap;
   width: 100%;
@@ -1040,15 +1045,18 @@ img {
   .img-section{
     display: none;
   }
-
+   .skills-container{
+    margin: 0;
+    padding: 0;
+   }
   .skills-list{
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 72px;
     
   }
   .box-list{
-    width: 396px;
+    width: 350px;
     
   }
   .secondary-title{
@@ -1062,11 +1070,11 @@ img {
   }
   .skills-paragraf{
     color: #434455;
-  font-size: 16px;
-  font-family: Roboto;
-  font-weight: 500;
-  line-height: 24px;
-  letter-spacing: 0.32px;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0.32px;
   }
   .icons-container{
     display: none;
@@ -1085,10 +1093,14 @@ img {
     letter-spacing: 0.72px;
     text-align: center;
   }
+  .list-container{
+    width: 340px;
+  }
   .team-list{
    flex-direction: column;
    align-items: center;
    gap: 72px;
+   width: 340px;
   }
   .info-list{
     width: 264px;
@@ -1110,9 +1122,7 @@ img {
   line-height: 24px;
   letter-spacing: 0.32px;
  }
-.list-customers{
-  padding: 0;
-}
+
 .icons-container{
   padding: 0;
 }
@@ -1127,29 +1137,39 @@ img {
   word-wrap: break-word
  }
  .list-customers{
-  width: 428px;
+  width: 340px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 72px 16px ;
+  padding-left: 10px;
  }
  .icons-list{
-  width: 190px;
+  width: 150px;
 
 }
-
+.footer-container{
+  padding: 120px 5px;
+}
 .footer-div{
+  width: 330px;
   display: flex;
   flex-direction: column;
+  align-items: center;
   
 }
+
 
 .footer-formular{
   display: flex;
   flex-direction: column;
 }
-
+.l-p-div{
+  text-align: center;
+}
 .footer-paragraf{
-  margin: 0 15px;
+  width: 268px;
+  text-align: start;
+  /* margin: 0 5px; */
  
 }
 .social-media-container{
@@ -1166,25 +1186,29 @@ img {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
-  margin-left: 90px;
+  
 }
-.social-media-list{
-  margin-left: 90px;
-}
+
 .subscribe-p{
   font-size: 16px;
   font-family: Roboto;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.32px;
-  margin-left: 110px;
+  text-align: center;
+ 
+}
+.footer-form{
+  margin-left: 0;
 }
 .footer-inp{
-  width: 398px;
-  margin-left: -47px;
+  width: 320px;
+
+ 
+  
 }
 .subscribe-btn{
-  margin-left: 65px;
+ margin-left: 75px;
 }
 
 }
