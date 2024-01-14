@@ -1027,6 +1027,10 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+  .header-container{
+    width: 100%;
+  }
+
   .header-section{
   flex-wrap: wrap;
   width: 100%;
@@ -1036,6 +1040,7 @@ img {
   .navigation-container{
     margin: 0;
   }
+
   .hero-title{
     width: 320px;
     color: white;
@@ -1192,7 +1197,7 @@ img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 72px 0;
+  margin: 72px 120px;
 }
 .social-media-title{
   font-size: 16px;
@@ -1229,10 +1234,15 @@ img {
  margin:auto;
 }
 
+.f-tablet-size{
+  display: flex;
+  flex-direction: column;
+ 
+}
 }
 
 /* zise 768px */
-@media (max-width: 768px) {
+@media (min-width:428px) and (max-width: 768px) {
 
   
 
