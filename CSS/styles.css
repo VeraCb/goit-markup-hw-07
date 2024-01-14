@@ -1021,7 +1021,7 @@ img {
 
 
 /* social media size 428px */
-@media (max-width: 428px) {
+@media screen and (min-width: 320px) and (max-width: 428px) {
 
   .app-contaioner{
     margin-left: auto;
@@ -1042,6 +1042,7 @@ img {
   }
 
   .hero-title{
+    
     width: 320px;
     color: white;
     font-size: 36px;
@@ -1242,9 +1243,13 @@ img {
 }
 
 /* zise 768px */
-@media (min-width:428px) and (max-width: 768px) {
+@media screen and (min-width:429px) and (max-width: 768px) {
 
-  
+  img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
   .app-contaioner{
    
@@ -1252,7 +1257,7 @@ img {
     margin-right: auto;
   }
   .header-container{
-    width: 100%;
+    width: 768px;
   }
   .navigation-container{
     margin: 0;
@@ -1267,9 +1272,15 @@ img {
     flex-direction: column;
     gap: 0;
   }
+  .hero-section{
+    width: 768px;
+ 
+  }
+ 
 /* skills section */
 
 .skills-section{
+  width: 768px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1314,7 +1325,9 @@ img {
 }
 
 /* team section */
-
+.team-section{
+  width: 768px;
+}
 .list-container{
   margin-left: auto;
   margin-right: auto;
@@ -1332,6 +1345,7 @@ img {
 }
 /* customers section */
 .customers-title{
+  width: 700px;
   color: #2E2F42;
   font-size: 36px;
   font-family: Roboto;
@@ -1339,14 +1353,14 @@ img {
   text-transform: capitalize;
   line-height: 40px;
   letter-spacing: 0.72px;
-  word-wrap: break-word
+ text-align: center;
  }
  .list-customers{
-    margin-left: auto;
-    margin-right: auto;
-    width: 340px;
+    
+    width: 768px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
     gap: 72px 16px ;
     padding-left: 10px;
  }
@@ -1357,6 +1371,7 @@ img {
 
 /*  footer */
 .footer-container{
+  width: 768px;
   padding: 90px 0;
 }
 .l-p-div{
